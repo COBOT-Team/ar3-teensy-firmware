@@ -5,7 +5,7 @@
  * @version 1.0
  * @date 2023-09-10
  *
- * Joint configurations for COBOT 0.
+ * Joint configurations for COBOT 1.
  */
 
 #if COBOT_ID == 1
@@ -186,7 +186,7 @@ Joint joints[] = {
     .id = 5,
     .name = "wrist roll",
 
-    .min_steps = -3285,
+    .min_steps = -3588,
     .max_steps = 3700,
     .ref_steps = -3285,
     

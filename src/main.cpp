@@ -95,8 +95,6 @@ Messenger<SERIAL_BUFFER_SIZE, ERROR_MSG_BUFFER_SIZE> messenger(serial_buffer_out
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return  The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *          small.
  */
 void handle_init(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
@@ -128,8 +126,6 @@ void handle_init(uint32_t request_id, const uint8_t* data, uint8_t data_len)
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return  The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *          small.
  */
 void handle_calibrate(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
@@ -223,8 +219,6 @@ void handle_calibrate(uint32_t request_id, const uint8_t* data, uint8_t data_len
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_override(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
@@ -304,8 +298,6 @@ void handle_override(uint32_t request_id, const uint8_t* data, uint8_t data_len)
  * Handles a GetJoints request.
  *
  * @param[in] request_id The ID of the request.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_get_joints(uint32_t request_id)
 {
@@ -331,8 +323,6 @@ void handle_get_joints(uint32_t request_id)
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_move_to(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
@@ -446,8 +436,6 @@ void handle_move_to(uint32_t request_id, const uint8_t* data, uint8_t data_len)
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_move_speed(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
@@ -537,8 +525,6 @@ void handle_move_speed(uint32_t request_id, const uint8_t* data, uint8_t data_le
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_follow_trajectory(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
@@ -628,8 +614,6 @@ void handle_follow_trajectory(uint32_t request_id, const uint8_t* data, uint8_t 
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_stop(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
@@ -679,8 +663,6 @@ void handle_stop(uint32_t request_id, const uint8_t* data, uint8_t data_len)
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_go_home(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
@@ -735,8 +717,6 @@ void handle_go_home(uint32_t request_id, const uint8_t* data, uint8_t data_len)
  * Handles a Reset request.
  *
  * @param[in] request_id The ID of the request.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_reset(uint32_t request_id)
 {
@@ -761,8 +741,6 @@ void handle_reset(uint32_t request_id)
  * @param[in] request_id The ID of the request.
  * @param[in] data The request data.
  * @param[in] data_len The length of the data buffer.
- * @return The number of bytes written to the serial buffer, or -1 if the serial buffer was too
- *         small.
  */
 void handle_set_log_level(uint32_t request_id, const uint8_t* data, uint8_t data_len)
 {
